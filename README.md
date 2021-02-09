@@ -25,7 +25,7 @@ mvn spring-boot:run
 
 Once the application is up, you can access the below url to find standings of a team playing league football match using country name, league name and team name.
 
-http://localhost:8080/v1/football/countries/England/leagues/Championship/teams/Brentford
+http://localhost:8085/v1/football/countries/England/leagues/Championship/teams/Brentford
 
 you can view results by changing previously listed parameters.
 
@@ -37,11 +37,11 @@ Build Docker image
 docker build -f Dockerfile -t football-image .
 
 Run Docker Container
-docker run -p 8080:8080 football-image
+docker run -p 8085:8085 football-image
 
 Then test the application accessing the below url ->
 
-http://localhost:8080/v1/football/countries/England/leagues/Championship/teams/Brentford
+http://localhost:8085/v1/football/countries/England/leagues/Championship/teams/Brentford
 
 Steps to configure the jenkin ->
 
