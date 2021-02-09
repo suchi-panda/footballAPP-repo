@@ -55,8 +55,9 @@ http://localhost:8085/v1/football/countries/England/leagues/Championship/teams/B
 Add pipiline following below steps 
 
 select pipiline script from SCM.
-In SCM select Git, and in repositories, add repository URL as https://github.com/suchi-panda/footballAPP-repo.git and credentials. Specify the branch as */master then save it
+In SCM select Git, and in repositories, add repository URL as https://github.com/suchi-panda/footballAPP-repo.git and credentials. 
+Specify the branch as */master then save it.
 Provide the Script Path -> Jenkinfile
-Then click on build now in dashboard . This will follow the steps mentioned in jenkin file and buils will succeed.
+Then click on build now in dashboard and this will follow the steps mentioned in jenkin file and buils will succeed.
 
 
