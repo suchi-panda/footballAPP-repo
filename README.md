@@ -36,7 +36,7 @@ http://localhost:8085/v1/football/countries/England/leagues/Championship/teams/B
 
 you can view results by changing previously listed parameters.
 
-Data is fetched consuming APIFooball APIs.
+Data is fetched consuming APIFooball APIs available @ https://apifootball.com/documentation/
 
 ### Steps to run build docker image and run the contnairazation ->
 
