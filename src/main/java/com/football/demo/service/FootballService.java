@@ -31,12 +31,14 @@ public class FootballService {
 		FootballStandings standing = new FootballStandings();
 		try {
 			List<Country> countryList = footballServiceClient.getCountryList();
-
+			System.out.println("countryList " + countryList);
 			List<String> countryIdFilteredList = countryList.stream().filter(c->c.getCountryName().equals(countryName)).map(Country::getCountryId).collect(Collectors.toList());
+			System.out.println("countryIdFilteredList " + countryIdFilteredList);
 			if(countryIdFilteredList.size()>0) {
 				List<Competition> competitionList = footballServiceClient.getCompetitionList(countryIdFilteredList.get(0));
 
 				List<String> filteredLegueIdList = competitionList.stream().filter(co -> co.getLeagueName().equals(leagueName)).map(Competition::getLeagueId).collect(Collectors.toList());
+				System.out.println("filteredLegueIdList " + filteredLegueIdList);
 				if(Objects.nonNull(filteredLegueIdList) && filteredLegueIdList.size()>0) {
 					List<Team> teamList = footballServiceClient.getTeamList(filteredLegueIdList.get(0));
 
